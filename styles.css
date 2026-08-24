@@ -234,10 +234,10 @@ h1 {
   }
 
   .widget-frame {
-    height: 62vh;
-    height: 62dvh;
-    min-height: 420px;
-    max-height: 560px;
+    height: 56vh;
+    height: 56dvh;
+    min-height: 380px;
+    max-height: 520px;
     border-radius: 11px;
   }
 
