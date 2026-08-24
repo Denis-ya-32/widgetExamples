@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Встроенная форма выбора мест и покупки билетов">
+    <title>Выбор мест — билеты на сеанс</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://s3.intickets.ru/interposed-frame.min.css">
+    <script src="https://s3.intickets.ru/intickets.js"></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="ticket-card" aria-labelledby="page-title">
+        <div class="ticket-card__header">
+          <div>
+            <p class="eyebrow">Сеанс 74820282</p>
+            <h1 id="page-title">Выберите места</h1>
+            <p class="description">Оформите билеты в форме ниже.</p>
+          </div>
+
+          <a class="back-link" href="index.html">Вернуться на главную</a>
+        </div>
+
+        <div class="widget-frame" aria-label="Форма покупки билетов">
+          <div
+            class="intickets-frame-container"
+            data-url="https://iframeab-pre10009.intickets.ru/seance/74820282"
+          ></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
