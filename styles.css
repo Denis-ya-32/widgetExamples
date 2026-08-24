@@ -191,8 +191,8 @@ h1 {
   }
 
   .frame-layout {
-    gap: 12px;
-    padding: 12px;
+    gap: 16px;
+    padding: 16px 16px 40px;
   }
 
   .frame-layout .ticket-card,
@@ -200,6 +200,11 @@ h1 {
     border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow: 0 8px 24px rgb(16 24 40 / 7%);
+  }
+
+  .frame-layout .widget-card {
+    padding: 8px;
+    background: var(--background);
   }
 
   .ticket-card__header {
@@ -229,8 +234,11 @@ h1 {
   }
 
   .widget-frame {
-    height: calc(100dvh - 210px);
-    min-height: 600px;
+    height: 62vh;
+    height: 62dvh;
+    min-height: 420px;
+    max-height: 560px;
+    border-radius: 11px;
   }
 
   .session-frame {
