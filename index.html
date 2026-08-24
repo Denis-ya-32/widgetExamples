@@ -6,31 +6,41 @@
     <meta name="description" content="Выбор мест и покупка билетов онлайн">
     <title>Билеты на сеанс</title>
 
-    <link rel="stylesheet" href="styles.css?v=2">
+    <link rel="stylesheet" href="styles.css?v=4">
     <link rel="stylesheet" href="https://s3.intickets.ru/intickets.min.css">
     <script src="https://s3.intickets.ru/intickets.js"></script>
   </head>
   <body>
-    <main class="page-shell page-shell--centered">
-      <section class="ticket-card hero-card" aria-labelledby="page-title">
-        <p class="eyebrow">Онлайн-покупка</p>
-        <h1 id="page-title">Билеты на сеанс</h1>
-        <p class="description">
-          Откройте форму покупки во всплывающем окне или перейдите на страницу
-          со встроенным виджетом.
-        </p>
+    <main class="page-shell frame-layout">
+      <section class="ticket-card ticket-card--intro" aria-labelledby="page-title">
+        <div class="ticket-card__header">
+          <div>
+            <p class="eyebrow">Онлайн-покупка</p>
+            <h1 id="page-title">Билеты на сеанс</h1>
+            <p class="description">
+              Откройте всплывающую форму или выберите места во фрейме ниже.
+            </p>
 
-        <div class="actions">
-          <a
-            class="popup-button"
-            href="https://iframeab-pre10011.intickets.ru/seance/74820342#abiframe"
-          >
-            Купить билет
-          </a>
+            <div class="actions">
+              <a
+                class="popup-button"
+                href="https://iframeab-pre10011.intickets.ru/seance/74820342#abiframe"
+              >
+                Купить билет во всплывающем окне
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <a class="secondary-link" href="frame.html">
-            Открыть страницу с фреймом
-          </a>
+      <section class="widget-card" aria-label="Встроенная форма покупки билетов">
+        <div class="widget-frame">
+          <iframe
+            class="session-frame"
+            src="https://iframeab-pre10009.intickets.ru/seance/74820342"
+            title="Покупка билетов на сеанс 74820342"
+            loading="eager"
+          ></iframe>
         </div>
       </section>
     </main>
