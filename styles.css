@@ -145,8 +145,7 @@ h1 {
   background: #ffffff;
 }
 
-.intickets-frame-container,
-.intickets-frame-container iframe {
+.session-frame {
   display: block;
   width: 100% !important;
   max-width: 100% !important;
@@ -192,8 +191,7 @@ h1 {
   }
 
   .widget-frame,
-  .intickets-frame-container,
-  .intickets-frame-container iframe {
+  .session-frame {
     min-height: calc(100svh - 236px);
   }
 }
