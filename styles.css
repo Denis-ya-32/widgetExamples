@@ -113,6 +113,37 @@ h1 {
   margin-top: 28px;
 }
 
+.popup-options {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.popup-option {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.popup-option__title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.popup-option__url {
+  max-width: 100%;
+  color: var(--accent);
+  font-size: 14px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
 .popup-button,
 .secondary-link,
 .back-link {
@@ -225,6 +256,15 @@ h1 {
   .actions {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .popup-options {
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .popup-option {
+    padding: 14px;
   }
 
   .popup-button,
