@@ -140,7 +140,8 @@ h1 {
 
 .widget-frame {
   width: 100%;
-  min-height: 720px;
+  height: clamp(680px, calc(100vh - 230px), 900px);
+  min-height: 680px;
   overflow: hidden;
   background: #ffffff;
 }
@@ -149,7 +150,8 @@ h1 {
   display: block;
   width: 100% !important;
   max-width: 100% !important;
-  min-height: 720px;
+  height: 100%;
+  min-height: 100%;
   border: 0;
 }
 
@@ -190,9 +192,14 @@ h1 {
     width: 100%;
   }
 
-  .widget-frame,
+  .widget-frame {
+    height: calc(100dvh - 210px);
+    min-height: 600px;
+  }
+
   .session-frame {
-    min-height: calc(100svh - 236px);
+    height: 100%;
+    min-height: 100%;
   }
 }
 
