@@ -6,7 +6,7 @@
     <meta name="description" content="Выбор мест и покупка билетов онлайн">
     <title>Билеты на сеанс</title>
 
-    <link rel="stylesheet" href="styles.css?v=7">
+    <link rel="stylesheet" href="styles.css?v=8">
     <link rel="stylesheet" href="https://s3.intickets.ru/intickets.min.css">
     <script src="https://s3.intickets.ru/intickets.js"></script>
   </head>
@@ -50,16 +50,56 @@
         </div>
       </section>
 
-      <section class="widget-card" aria-label="Встроенная форма покупки билетов">
-        <div class="widget-frame">
-          <iframe
-            class="session-frame"
-            src="https://iframeab-pre10009.intickets.ru/seance/74820342"
-            title="Покупка билетов на сеанс 74820342"
-            loading="eager"
-          ></iframe>
-        </div>
-      </section>
+      <div class="frame-example">
+        <section class="ticket-card frame-caption">
+          <p>Это виджет с типом "Фрейм" и ссылкой на сеанс.</p>
+        </section>
+
+        <section class="widget-card" aria-label="Фрейм с конкретным сеансом">
+          <div class="widget-frame">
+            <iframe
+              class="session-frame"
+              src="https://iframeab-pre10009.intickets.ru/seance/74820342"
+              title="Покупка билетов на сеанс 74820342"
+              loading="eager"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+
+      <div class="frame-example">
+        <section class="ticket-card frame-caption">
+          <p>Это виджет с типом "Фрейм" и ссылкой на всю афишу.</p>
+        </section>
+
+        <section class="widget-card" aria-label="Фрейм со всей афишей">
+          <div class="widget-frame">
+            <iframe
+              class="session-frame"
+              src="https://iframeab-pre10009.intickets.ru/"
+              title="Афиша всех мероприятий"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
+      </div>
+
+      <div class="frame-example">
+        <section class="ticket-card frame-caption">
+          <p>Это виджет с типом "Фрейм" и ссылкой на афишу конкретного мероприятия.</p>
+        </section>
+
+        <section class="widget-card" aria-label="Фрейм с конкретным мероприятием">
+          <div class="widget-frame">
+            <iframe
+              class="session-frame"
+              src="https://iframeab-pre10009.intickets.ru/event/74820282/"
+              title="Афиша мероприятия 74820282"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </section>
+      </div>
     </main>
   </body>
 </html>

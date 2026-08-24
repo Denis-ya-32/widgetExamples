@@ -78,6 +78,29 @@ body {
   box-shadow: 0 12px 36px rgb(16 24 40 / 8%);
 }
 
+.frame-example {
+  display: grid;
+  gap: 12px;
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.frame-example .widget-card {
+  width: 100%;
+}
+
+.frame-caption {
+  width: 100%;
+  padding: 18px 22px;
+}
+
+.frame-caption p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .hero-card {
   width: min(720px, 100%);
   padding: clamp(28px, 6vw, 52px);
@@ -251,6 +274,18 @@ h1 {
   .frame-layout .widget-card {
     padding: 8px;
     background: var(--background);
+  }
+
+  .frame-example {
+    gap: 10px;
+  }
+
+  .frame-caption {
+    padding: 16px;
+  }
+
+  .frame-caption p {
+    font-size: 15px;
   }
 
   .ticket-card__header {
