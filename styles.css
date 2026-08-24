@@ -54,6 +54,30 @@ body {
   border-bottom: 1px solid var(--border);
 }
 
+.frame-layout {
+  display: grid;
+  align-content: start;
+  gap: 20px;
+}
+
+.frame-layout > .ticket-card,
+.widget-card {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.ticket-card--intro .ticket-card__header {
+  border-bottom: 0;
+}
+
+.widget-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  box-shadow: 0 12px 36px rgb(16 24 40 / 8%);
+}
+
 .hero-card {
   width: min(720px, 100%);
   padding: clamp(28px, 6vw, 52px);
@@ -164,6 +188,18 @@ h1 {
     border: 0;
     border-radius: 0;
     box-shadow: none;
+  }
+
+  .frame-layout {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .frame-layout .ticket-card,
+  .frame-layout .widget-card {
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgb(16 24 40 / 7%);
   }
 
   .ticket-card__header {
